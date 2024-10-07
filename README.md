@@ -1,6 +1,6 @@
 # SA3Y_REGISTER_WIZARDFORM
 
-![1706964416178](https://github.com/user-attachments/assets/0c5fb28b-e443-42d2-88e7-c66055dcdc8d)
+![Screenshot 2024-10-07 212018](https://github.com/user-attachments/assets/494d0859-8c7d-4e13-920d-68f0594bbee4)
 
 
 

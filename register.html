@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/regis.css">
+</head>
+
+<body>
+    <div class="row no-gutters" id="register-form">
+        <div class="col-lg-6 col-md-6">
+            <div class="wizard-content-left d-flex justify-content-center align-items-center">
+                
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-6">
+            <div class="form-wizard">
+                <form action="/submit-registration" method="post" role="form">
+                    <div class="form-wizard-header">
+                        <p><a href="./register2.html" id="company-regis">التسجيل الشركات</a></p>
+                        <ul class="list-unstyled form-wizard-steps clearfix">
+                            <li class="active"><span>1</span></li>
+                            <li><span>2</span></li>
+                            <li><span>3</span></li>
+                            <li><span>4</span></li>
+                        </ul>
+                    </div>
+                    <!-- Step 1 -->
+                    <fieldset class="wizard-fieldset show">
+                        <h5>البيانات الشخصية</h5>
+                        <div class="form-group">
+                            <input type="text" class="form-control wizard-required" id="fname" required aria-label="Full name">
+                            <label for="fname" class="wizard-form-text-label">الاسم بالكامل*</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control wizard-required" id="email" required aria-label="Email">
+                            <label for="email" class="wizard-form-text-label">البريد الإلكتروني*</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control wizard-required" id="phone" required aria-label="Phone number">
+                            <label for="phone" class="wizard-form-text-label">رقم الهاتف *</label>
+                        </div>
+                        <div class="form-group">
+                            النوع
+                            <div class="wizard-form-radio">
+                                <input name="gender" id="radio1" type="radio" value="female" required>
+                                <label for="radio1">أنثى</label>
+                            </div>
+                            <div class="wizard-form-radio">
+                                <input name="gender" id="radio2" type="radio" value="male">
+                                <label for="radio2">ذكر</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control wizard-required" id="address" required aria-label="Address">
+                            <label for="address" class="wizard-form-text-label">العنوان*</label>
+                        </div>
+                        <div class="form-group clearfix">
+                            <button type="button" class="form-wizard-next-btn float-right">التالي</button>
+                        </div>
+                    </fieldset>
+                    <!-- Step 2 -->
+                    <fieldset class="wizard-fieldset">
+                        <h5>المعلومات المتعلقة بالمتطوع</h5>
+                        <div class="form-group">
+                            <select class="form-control wizard-required" required>
+                                <option value="">اختر مجال الاهتمام</option>
+                                <option value="education">التعليم والتدريب</option>
+                                <option value="health">الصحة والرفاهية</option>
+                                <option value="environment">البيئة</option>
+                                <option value="social">العمل الاجتماعي</option>
+                                <option value="community">التنمية الاجتماعية</option>
+                                <option value="Technology">التقنية و التكنولوجيا</option>
+                                <option value="youth">الشباب و الرياضة</option>
+                                <!-- Additional options -->
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control wizard-required" id="experience" required aria-label="Experience"></textarea>
+                            <label for="experience" class="wizard-form-text-label">الخبرات السابقة*</label>
+                        </div>
+                        <div class="form-group">
+                            <select id="availability" name="availability" class="form-control" required>
+                                <option value="">اختر التوافر</option>
+                                <option value="weekdays_morning">أيام الأسبوع - صباحًا</option>
+                                <option value="weekdays_afternoon">أيام الأسبوع - بعد الظهر</option>
+                                <option value="weekdays_evening">أيام الأسبوع - مسائًا</option>
+                                <option value="weekends_morning">عطلات نهاية الأسبوع - صباحًا</option>
+                                <option value="weekdays_evening">عطلات نهاية الأسبوع - مسائًا</option>
+                                <option value="full_time">متفرغ</option>
+                                
+                            </select>
+                        </div>
+                        <div class="form-group clearfix">
+                            <button type="button" class="form-wizard-previous-btn float-left">السابقة</button>
+                            <button type="button" class="form-wizard-next-btn float-right">التالي</button>
+                        </div>
+                    </fieldset>
+                    <!-- Step 3 -->
+                    <fieldset class="wizard-fieldset">
+                        <h5>بيانات اختيارية</h5>
+                        <div class="form-group">
+                            <input type="number" class="form-control wizard-required" id="age" required aria-label="Age">
+                            <label for="age" class="wizard-form-text-label">العمر *</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control wizard-required" id="city" required aria-label="City">
+                            <label for="city" class="wizard-form-text-label">المدينة *</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="url" class="form-control " id="link">
+                            <label for="link" class="wizard-form-text-label">رابط حساب LinkedIn*</label>
+                            <div class="wizard-form-error"></div>
+                        </div>
+                        <div class="form-group clearfix">
+                            <button type="button" class="form-wizard-previous-btn float-left">السابقة</button>
+                            <button type="button" class="form-wizard-next-btn float-right">التالي</button>
+                        </div>
+                    </fieldset>
+                    <!-- Step 4 -->
+                    <fieldset class="wizard-fieldset">
+                        <h5>إنشاء كلمة المرور</h5>
+                        <div class="form-group">
+                            <input type="password" class="form-control wizard-required" id="pass" required aria-label="Password">
+                            <label for="pass" class="wizard-form-text-label">كلمة المرور *</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control wizard-required" id="confirm-pass" required aria-label="Confirm Password">
+                            <label for="confirm-pass" class="wizard-form-text-label">تأكيد كلمة المرور *</label>
+                        </div>
+                        <div class="form-group">
+                            <div class="wizard-form-check">
+                                <input  id="check" type="checkbox" value="yes" required>
+                                <label for="check">أوافق على تلقي رسائل بريد إلكتروني تحتوي على تحديثات وأخبار.</label>
+                            </div>
+                        </div>
+                        <div class="form-group clearfix">
+                            <button type="button" class="form-wizard-previous-btn float-left">السابقة</button>
+                            <button type="submit" class="form-wizard-submit float-right">إرسال</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--start script-->
+
+    <script src="./js/jquery-3.7.1.js"></script>
+    <script src="./js/register1.js"></script>
+
+    
+    
+</body>
+
+</html>
